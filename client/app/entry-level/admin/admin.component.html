@@ -1,0 +1,45 @@
+
+<!-- code for department Section -->
+<div class="container">
+    <div>
+        <img class="full-image animated slideInDown z-depth-2" src="http://www.rajras.in/wp-content/uploads/2016/11/Screen-Shot-2016-11-23-at-8.03.02-PM.png" alt=" Rajasthan-Departments">
+    </div>
+
+<!--Section for Working on the list of the departments-->   
+<!--Section: Team v.1-->
+<section class="team-section pb-5">
+
+    <!--Section heading-->
+    <h2 class="h1 text-center py-5">DEPARTMENTS</h2>
+    <!--Section description-->
+    <p class="grey-text pb-5 text-center">Various departments associated with Rajasthan Government</p>
+
+    <!-- Grid row -->
+    <div class="row text-center">
+
+        
+        <!-- Grid column -->
+        <div class="col-lg-3 col-md-6 mb-4" *ngFor="let item of departments">
+            <div (click)="toDepartment(item.name)" [routerLink]="['/emplist']"  class="card card-body z-depth-3 hoverable">
+                <div class="avatar mx-auto my-3">
+                    <img src="http://blog.yellowhaze.in/wp-content/uploads/2017/05/rajasthan.jpg" class="rounded-circle img-fluid" alt="First sample avatar image">
+                </div>
+                <h5 class="font-weight-bold">
+                    <strong >{{item.name}}</strong>
+                </h5>
+                <p class="grey-text">Click for Employee List</p>
+            </div>
+        </div>
+      
+        <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+</section>
+<!--Section: Team v.1-->
+            
+</div>
+
+  
+

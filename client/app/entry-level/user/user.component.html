@@ -1,0 +1,44 @@
+<form class="material-form">
+  <div class="material-form__container">
+    <input class="material-form__input" placeholder="{{userData[0].name}}" id="input-name" pattern="[a-zA-Z ñÑáéíóúÁÉÍÓÚ]{10,40}" maxlength="40"/>
+    <label class="material-form__label" for="input-name">Nombre</label>
+    <div class="material-form__focus-animation"></div>
+    <p class="material-form__error">Nombre no válido</p>
+  </div>
+  <div class="material-form__container">
+    <input class="material-form__input" type="email" placeholder=" " id="input-email" pattern="[0-9a-zAZÑñ._@-]{10,50}" maxlength="50"/>
+    <label class="material-form__label" for="input-email">Correo electrónico</label>
+    <div class="material-form__focus-animation"></div>
+    <p class="material-form__error">Correo no válido</p>
+  </div>
+  <div class="material-form__container">
+    <input class="material-form__input" type="password" placeholder=" " id="input-password" pattern="[a-zA-Z0-9._ -]{6,18}" maxlength="18"/>
+    <label class="material-form__label" for="input-password">Contraseña</label>
+    <div class="material-form__focus-animation"></div>
+    <p class="material-form__error">Contraseña no válida</p>
+  </div>
+  <button class="material-form__button">Update Details</button>
+</form>
+
+
+
+
+<!--<div class="row">
+
+
+    <div class="card col" style="background-color:teal" *ngFor="let dept of departments">
+
+       
+
+        
+        <div class="card-body">
+           
+            <h4 class="card-title" >{{ dept.name }}</h4>
+           
+            <a  class="btn btn-primary" *ngIf="!dept.applied" (click)="makeRequest(dept.id)">Apply</a>
+            <a href="#" class="btn btn-primary" *ngIf="dept.applied" disabled>Apply</a>
+        </div>
+
+    </div>
+    
+</div>-->
